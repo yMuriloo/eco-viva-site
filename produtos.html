@@ -5,78 +5,74 @@
 <title>Produtos - EcoViva</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
 body{
-  background: linear-gradient(135deg,#e8f5e9,#ffffff);
+  background:#f4fff4;
   color:#1b5e20;
 }
 
 /* HEADER */
 header{
-  position: fixed;
-  width: 100%;
-  top: 0;
   display:flex;
   justify-content:space-between;
-  padding:15px 40px;
-  background: rgba(255,255,255,0.6);
-  backdrop-filter: blur(10px);
-  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  padding:20px 40px;
+  background:white;
+  box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
-.logo{font-size:24px;font-weight:bold;}
+.logo{font-size:24px;font-weight:700;}
 
 nav a{
   margin-left:20px;
   text-decoration:none;
   color:#1b5e20;
-  font-weight:bold;
 }
 
-/* CONTEÚDO */
-main{
-  padding-top:100px;
+/* PRODUTOS */
+.container{
+  padding:50px 20px;
   text-align:center;
 }
 
-.container{
+.grid{
   display:flex;
-  flex-wrap:wrap;
   justify-content:center;
-  gap:30px;
-  padding:40px;
+  flex-wrap:wrap;
+  gap:25px;
 }
 
 .produto{
-  width:280px;
+  background:white;
   padding:20px;
-  border-radius:20px;
-  background: rgba(255,255,255,0.6);
-  backdrop-filter: blur(10px);
-  box-shadow:0 10px 25px rgba(0,0,0,0.1);
-  transition:0.3s;
+  width:260px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-.produto:hover{transform:translateY(-10px);}
+.produto h2{margin-bottom:10px;}
+.produto p{margin-bottom:10px;}
 
 button{
-  margin-top:10px;
   padding:10px 20px;
   border:none;
   border-radius:20px;
-  background:linear-gradient(135deg,#2e7d32,#66bb6a);
+  background:#2e7d32;
   color:white;
   cursor:pointer;
 }
+
+button:hover{background:#1b5e20;}
 
 /* FOOTER */
 footer{
   background:#2e7d32;
   color:white;
-  padding:20px;
   text-align:center;
+  padding:15px;
 }
 </style>
 </head>
@@ -90,35 +86,34 @@ footer{
   </nav>
 </header>
 
-<main>
+<div class="container">
   <h1>Nossos Produtos</h1>
 
-  <div class="container">
+  <div class="grid">
 
     <div class="produto">
       <h2>Chás Naturais</h2>
-      <p>Ervas selecionadas que ajudam no relaxamento, sono e digestão.</p>
+      <p>Ervas selecionadas para relaxamento e saúde.</p>
       <p><strong>R$ 19,90</strong></p>
       <button>Comprar</button>
     </div>
 
     <div class="produto">
       <h2>Grãos Orgânicos</h2>
-      <p>Alimentos ricos em fibras e energia para o dia a dia.</p>
+      <p>Fonte de energia e nutrientes naturais.</p>
       <p><strong>R$ 24,90</strong></p>
       <button>Comprar</button>
     </div>
 
     <div class="produto">
       <h2>Óleos Naturais</h2>
-      <p>Óleos essenciais para saúde, pele e cabelo.</p>
+      <p>Cuidados naturais para corpo e mente.</p>
       <p><strong>R$ 29,90</strong></p>
       <button>Comprar</button>
     </div>
 
   </div>
-
-</main>
+</div>
 
 <footer>
   © 2026 EcoViva Naturais
