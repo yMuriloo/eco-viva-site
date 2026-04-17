@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Produtos - EcoViva</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e8f5e9, #ffffff);
+  color: #1b5e20;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.3);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #43a047;
+}
+
+/* TÍTULO */
+.titulo {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.titulo h1 {
+  font-size: 40px;
+}
+
+/* PRODUTOS */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.produto {
+  width: 300px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.4s;
+}
+
+.produto:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.produto img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.produto h2 {
+  margin-bottom: 10px;
+}
+
+.produto p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.info {
+  font-size: 13px;
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 0 15px #66bb6a;
+}
+
+/* VOLTAR */
+.voltar {
+  text-align: center;
+  margin: 40px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2e7d32;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🌿 EcoViva</div>
+  <nav>
+    <a href="index.html">Início</a>
+  </nav>
+</header>
+
+<div class="titulo">
+  <h1>Nossos Produtos Naturais</h1>
+</div>
+
+<div class="container">
+
+  <div class="produto">
+    <img src="https://cdn-icons-png.flaticon.com/512/2909/2909763.png">
+    <h2>Chás Naturais</h2>
+    <p>Seleção de chás com ervas naturais como camomila, hortelã e erva-doce.</p>
+    <p class="info">✔ Relaxamento | ✔ Melhora do sono | ✔ Digestão saudável</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="produto">
+    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png">
+    <h2>Grãos Orgânicos</h2>
+    <p>Grãos integrais livres de agrotóxicos, como aveia, quinoa e linhaça.</p>
+    <p class="info">✔ Energia natural | ✔ Rico em fibras | ✔ Alimentação equilibrada</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="produto">
+    <img src="https://cdn-icons-png.flaticon.com/512/415/415733.png">
+    <h2>Óleos Naturais</h2>
+    <p>Óleos essenciais como coco, argan e melaleuca para corpo e mente.</p>
+    <p class="info">✔ Hidratação | ✔ Cuidados com a pele | ✔ Bem-estar</p>
+    <button>Comprar</button>
+  </div>
+
+</div>
+
+<div class="voltar">
+  <button onclick="location.href='index.html'">Voltar para o início</button>
+</div>
+
+<footer>
+  © 2026 EcoViva Naturais
+</footer>
+
+</body>
+</html>
