@@ -5,66 +5,72 @@
 <title>Produtos - EcoViva</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
 
 body{
-  background:#f4fff4;
-  color:#1b5e20;
+  background:#f9fdf9;
+  color:#1b3a2f;
 }
 
-/* HEADER */
 header{
   display:flex;
   justify-content:space-between;
-  padding:20px 40px;
+  padding:20px 60px;
   background:white;
-  box-shadow:0 3px 10px rgba(0,0,0,0.1);
+  border-bottom:1px solid #eee;
 }
 
-.logo{font-size:24px;font-weight:700;}
+.logo{font-weight:700;}
 
 nav a{
   margin-left:20px;
   text-decoration:none;
-  color:#1b5e20;
+  color:#1b3a2f;
 }
 
-/* PRODUTOS */
 .container{
-  padding:50px 20px;
+  padding:60px;
   text-align:center;
 }
 
 .grid{
   display:flex;
   justify-content:center;
+  gap:30px;
   flex-wrap:wrap;
-  gap:25px;
+  margin-top:30px;
 }
 
 .produto{
   background:white;
-  padding:20px;
-  width:260px;
+  width:280px;
+  padding:25px;
   border-radius:15px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 
 .produto img{
-  width:90px;
+  width:100px;
   margin-bottom:10px;
 }
 
-.produto h2{margin-bottom:10px;}
-.produto p{margin-bottom:10px;}
+.produto p{
+  margin:10px 0;
+  color:#555;
+}
+
+.preco{
+  font-weight:700;
+  margin:10px 0;
+}
 
 button{
-  padding:10px 20px;
+  padding:10px 25px;
   border:none;
-  border-radius:20px;
+  border-radius:25px;
   background:#2e7d32;
   color:white;
   cursor:pointer;
@@ -72,12 +78,11 @@ button{
 
 button:hover{background:#1b5e20;}
 
-/* FOOTER */
 footer{
-  background:#2e7d32;
+  background:#1b3a2f;
   color:white;
   text-align:center;
-  padding:15px;
+  padding:20px;
 }
 </style>
 </head>
@@ -97,26 +102,26 @@ footer{
   <div class="grid">
 
     <div class="produto">
-      <img src="https://pt.vecteezy.com/png/68644768-ervas-cha-vidro-verde-folha-seco-raiz-saudavel-beber-natural-remedio-isolado-em-transparencia-fundo-refrescante-bebida-organico-bem-estar-antioxidante">
+      <img src="https://cdn-icons-png.flaticon.com/512/415/415733.png">
       <h2>Chás Naturais</h2>
-      <p>Ervas selecionadas para relaxamento e saúde.</p>
-      <p><strong>R$ 19,90</strong></p>
+      <p>Ervas selecionadas que ajudam no relaxamento e bem-estar.</p>
+      <div class="preco">R$ 19,90</div>
       <button>Comprar</button>
     </div>
 
     <div class="produto">
-      <img src="https://static.vecteezy.com/system/resources/thumbnails/025/222/295/small/wheat-grains-isolated-on-transparent-background-png.png">
+      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png">
       <h2>Grãos Orgânicos</h2>
-      <p>Fonte de energia e nutrientes naturais.</p>
-      <p><strong>R$ 24,90</strong></p>
+      <p>Alimentos ricos em nutrientes e energia natural.</p>
+      <div class="preco">R$ 24,90</div>
       <button>Comprar</button>
     </div>
 
     <div class="produto">
-      <img src="https://static.vecteezy.com/system/resources/previews/015/098/659/non_2x/essential-oils-in-glass-bottles-png.png">
+      <img src="https://cdn-icons-png.flaticon.com/512/2909/2909763.png">
       <h2>Óleos Naturais</h2>
-      <p>Cuidados naturais para corpo e mente.</p>
-      <p><strong>R$ 29,90</strong></p>
+      <p>Óleos essenciais para cuidados com corpo e mente.</p>
+      <div class="preco">R$ 29,90</div>
       <button>Comprar</button>
     </div>
 
